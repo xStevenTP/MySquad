@@ -1,5 +1,11 @@
-<h1>MySquad</h1>
+<div class="container-fluid">
+    <h1>MySquad</h1>
 
-<h1>{{ currentTeam }}</h1>
+    <h1 *ngIf="currentTeam">{{ currentTeam }}</h1>
 
-<h1>Account</h1>
+    <h1 *ngIf="!currentTeam">No Team Selected</h1>
+
+    <h1>Account</h1>
+
+    <app-add-team></app-add-team>
+</div>
